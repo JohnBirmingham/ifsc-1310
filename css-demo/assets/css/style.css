@@ -307,4 +307,13 @@ dd + dt{
   nav.primary ul li a {
     display: block;
   }
+
+  aside .container{
+    flex-direction: column;
+  }
+  
+  #blog{
+    display:flex;
+    flex-direction:column;
+  }
 }

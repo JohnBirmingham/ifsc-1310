@@ -44,7 +44,8 @@ nav ul li{
 
 .dropdown{
     margin-top:36px;
-    display:none;
+    display:inline;
+    opacity:0;
     text-align:left;
     transition:.5s ease-in-out;
     position:absolute;
@@ -62,10 +63,8 @@ a:hover{
 nav ul li:hover{
     background-color:rgba(0,0,0,0.5);
     .dropdown{
-        display:inline;
+        opacity:100;
     }
 }
 
-.dropdown:hover{
-    display:inline;
-}
+
