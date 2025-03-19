@@ -1,5 +1,7 @@
 body{
     margin:0;
+    background-color: #d0d1d3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='92' viewBox='0 0 112 92'%3E%3Cg fill='%23a3b7c9' fill-opacity='0.31'%3E%3Cpath fill-rule='evenodd' d='M72 10H40L16 20H0v8h16l24-14h32l24 14h16v-8H96L72 10zm0-8H40L16 4H0v8h16l24-6h32l24 6h16V4H96L72 2zm0 84H40l-24-6H0v8h16l24 2h32l24-2h16v-8H96l-24 6zm0-8H40L16 64H0v8h16l24 10h32l24-10h16v-8H96L72 78zm0-12H40L16 56H0v4h16l24 14h32l24-14h16v-4H96L72 66zm0-16H40l-24-2H0v4h16l24 6h32l24-6h16v-4H96l-24 2zm0-16H40l-24 6H0v4h16l24-2h32l24 2h16v-4H96l-24-6zm0-16H40L16 32H0v4h16l24-10h32l24 10h16v-4H96L72 18z'/%3E%3C/g%3E%3C/svg%3E");
     text-align:center;
 }
 
@@ -31,6 +33,7 @@ nav ul{
 
 nav ul li{
     list-style-type: none;
+    text-wrap: nowrap;
     transition: .5s ease-in-out;
     position: relative;
     font-size: 1.5rem;
@@ -44,11 +47,13 @@ nav ul li{
 .dropdown{
     margin-top:36px;
     display:inline;
-    opacity:0;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    opacity: 0.3;
     text-align:left;
-    transition:.5s ease-in-out;
+    transition: 280ms all 120ms ease-out;
     position:absolute;
-    left:0;
+    left:65px;
 }
 
 .dropdown li{
@@ -62,7 +67,9 @@ a:hover{
 nav ul li:hover{
     background-color:rgba(0,0,0,0.5);
     .dropdown{
-        opacity:100;
+        opacity: 1;
+        transform: rotateX(0) translateX(-50%);
+        visibility: visible;
     }
 }
 
