@@ -1,0 +1,26 @@
+/*  overall section  */
+body {}
+.image_left{}
+.image_center{}
+.image_right{}
+
+/*  header section  */
+header {}
+h1 {}
+nav {}
+nav ul {}
+nav ul li {}
+
+/*  main portion  */
+main {}
+main h2 {}
+main h3 {}
+main p {}
+main table {}
+main tr {}
+main th {}
+main td {}
+
+/*  footer section  */
+footer {}
+footer h6{}
