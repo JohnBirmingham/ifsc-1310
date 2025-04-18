@@ -3,9 +3,32 @@ body {
     text-align: center;
     margin: 0;
 }
-.img_left{}
-.img_center{}
-.img_right{}
+.content{
+    width:80vw;
+    max-width:960px;
+    margin: 40px auto;
+}
+
+.img-right{
+  float:right;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left{
+  float:left;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  margin: 10px 20px 10px 0;
+}
+
+.img-center{
+  display:block;
+  margin:10px auto;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
 
 /*  header section  */
 header {
